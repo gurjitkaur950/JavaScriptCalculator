@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <title>Scientific Calculator</title>
+        <meta charset="utf-8">
+         <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+            </script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Calculator</h1>
+        </header>
+        <form id="myForm">
+             <table class="calculator">
+            <tr>
+                <td colspan="5"> <input id="display" type="text" placeholder="0"></td>
+            </tr>
+                <tr>
+                    <td><input type="button" class="btnTop" value="CE" id="btnC" onclick="ce()"></td>
+                    <td><input type="button" class="btnTop" value="DEL" id="btnDel" onclick="del()"></td>
+                    <td><input type="button" class="btnTop" value="=" id="btn=" onclick="equalto()"></td>
+                    <td><input type="button" class="btnOps" value="&#960;" id="btnPi" onclick="pie()"></td>
+                    <td><input type="button" class="btnOps" value="%" id="btn%" onclick="myclick(this.value)" ></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btnNum" value="7" id="btn7" onclick="myclick(this.value)" ></td>
+                    <td><input type="button" class="btnNum" value="8" id="btn8" onclick="myclick(this.value)" ></td>
+                    <td><input type="button" class="btnNum" value="9" id="btn9" onclick="myclick(this.value)" ></td>
+                    <td><input type="button" class="btnOps" value="x&#94;" id="btnX^" onclick="power()"></td>
+                    <td><input type="button" class="btnMath" value="/" id="btn/" onclick="myclick(this.value)" ></td>
+                </tr>
+                <tr>
+                   <td><input type="button" class="btnNum" value="4" id="btn4" onclick="myclick(this.value)" ></td>
+                    <td><input type="button" class="btnNum" value="5" id="btn5" onclick="myclick(this.value)" ></td>
+                    <td><input type="button" class="btnNum" value="6" id="btn6" onclick="myclick(this.value)" ></td>
+                    <td><input type="button" class="btnOps" value="ln" id="btLn4" onclick="log()"></td>
+                    <td><input type="button" class="btnMath" value="*" id="btn*" onclick="myclick(this.value)" ></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btnNum" value="1" id="btn1" onclick="myclick(this.value)" ></td>
+                    <td><input type="button" class="btnNum" value="2" id="btn2" onclick="myclick(this.value)"></td>
+                    <td><input type="button" class="btnNum" value="3" id="btn3" onclick="myclick(this.value)"></td>
+                    <td><input type="button" class="btnOps" value="&radic;" id="btnSqr" onclick="fsqrt()"></td>
+                    <td><input type="button" class="btnMath" value="-" id="btn-" onclick="myclick(this.value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btnMath" value="+/-" id="btn+-" onclick="sign()"></td>
+                    <td><input type="button" class="btnNum" value="0" id="btn0" onclick="myclick(this.value)"></td>
+                    <td><input type="button" class="btnMath" value="." id="btn." onclick="myclick(this.value)"></td>
+                    <td><input type="button" class="btnOps" value="x2" id="btnX2" onclick="fsquare()"></td>
+                    <td><input type="button" class="btnMath" value="+" id="btn+" onclick="myclick(this.value)"></td>
+                </tr>
+                <tr>
+                     <td><input type="button" class="btnMath" value="(" id="btn(" onclick="myclick(this.value)"></td>
+                    <td><input type="button" class="btnMath" value=")" id="btn)" onclick="myclick(this.value)"></td>
+                    <td><input type="button" class="btnMath" value="cos" id="btnCos" onclick="fcos()"></td>
+                    <td><input type="button" class="btnMath" value="sin" id="btnSin" onclick="fsin()"></td>
+                    <td><input type="button" class="btnMath" value="tan" id="btnTan" onclick="ftan()"></td>
+                </tr>
+            </table>
+        </form>
+        <footer>
+            Copyright &copy; 2019 Gurjit<br>
+            <a href="mailto:gurjit@kaur.com">gurjit@kaur.com</a>
+        </footer>
+    </body>
+</html>
